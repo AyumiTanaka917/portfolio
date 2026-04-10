@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="WEBデザイナーを目指す田中歩のポートフォリオサイト">
+    <title>Ayumi Tanaka Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--点滅アニメーション-->
+        <h1 class="p-neon">
+            We<span>lc</span>ome<br>
+            <span>t</span>o<br>
+            Ayum<span>i</span> Tana<span>ka</span>`s Bar
+        </h1>
+        <!--ナビゲーションはハンバーガーメニューから表示-->
+        <nav id="menu">
+            <ul>
+                <h2 class="p-neon">-Tonight's Menu-</h2>
+                <li>
+                    <a href="index.html" class="menu-btn">
+                        <span class="en p-neon">Top</span>
+                        <span class="ja p-neon">ページトップ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#Distillery" class="menu-btn">
+                        <span class="en p-neon">Distillery</span>
+                        <span class="ja p-neon">自己紹介</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#Skill" class="menu-btn">
+                        <span class="en p-neon">Skill Cocktail</span>
+                        <span class="ja p-neon">できること</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#Tasting" class="menu-btn">
+                        <span class="en p-neon">Tasting</span>
+                        <span class="ja p-neon">制作したもの</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#Contact" class="menu-btn">
+                        <span class="en p-neon">Contact</span>
+                        <span class="ja p-neon">お問い合わせ</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbtn-trigger" id="navbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <section id="Distillery" class="fade">
+        <h2 class="p-neon">Distillery</h2>
+        <span class="p-neon subtitle">自己紹介</span>
+        <div class="list">
+            <p>Tap a cask to explore</p>
+            <div class="items">
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal1">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Cask 2002</span>
+                                <span class="en o-neon">Origin</span>
+                                <span class="ja o-neon">〜私について〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal2">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Cask 2021</span>
+                                <span class="en o-neon">Base</span>
+                                <span class="ja o-neon">〜きっかけ〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal3">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Cask 2022</span>
+                                <span class="en o-neon">Experience</span>
+                                <span class="ja o-neon">〜経験・強み〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal4">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Special Reserve</span>
+                                <span></span>
+                                <span class="ja o-neon">〜こだわり〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal5">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Master's Select</span>
+                                <span></span>
+                                <span class="ja o-neon">〜スキル〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="barrel">
+                        <a href="#modal6">
+                            <img src="img/barrel.png" alt="樽">
+                            <div class="barrel-text">
+                                <span class="en o-neon">Next Vintage</span>
+                                <span></span>
+                                <span class="ja o-neon">〜展望〜</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Cask 2002 / Origin</h3>
+                            <span>〜私について〜</span>
+                            <div class="flex">
+                                <img src="img/田中歩のシティーハンター風イラスト.jpeg" alt="田中歩のシティーハンター風イラスト">
+                                <p>コンセプト設計を大切にするWebデザイナー。<br>
+                                    子育てと両立しながら、日々デザインと向き合っています。<br>
+                                    限られた時間だからこそ、集中力と継続力を武器に制作しています。
+                                </p>
+                            </div>
+                            <div class="info-row">
+                                <div class="label">Name：</div>
+                                <div class="content">田中 歩</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="label">Born：</div>
+                                <div class="content">2002</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="label">Age：</div>
+                                <div class="content">23</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="label">History：</div>
+                                <div class="content">
+                                    <p>2022年　国際ファッション専門職大学中退</p>
+                                    <p>2025年　ヒューマンアカデミー鹿児島校</p>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <div class="label">Hobby：</div>
+                                <div class="content">
+                                    <p>Music/ AAAとNissyというアーティストが好きで、気分を上げたい時や育児・勉強で行き詰まった時に聴いてリフレッシュしています。</p>
+                                    <p>Alcohol/ 基本的になんでも飲みます。お酒の場での本音で話せる空間、楽しい雰囲気が好きです。 </p>
+                                    <p>Design/ 自分の好きなもの、作ってみたいものを想定して、家や服のデザインをすることが好きです。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#Distillery" class="close"></a>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Cask 2021 / Experience</h3>
+                            <span>〜きっかけ〜</span>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="year">2021</div>
+                                    <h4 class="o-neon">FASHION</h4>
+                                    <p>
+                                        服のデザインが好きで国際ファッション専門職大学へ進学。
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="year">2022</div>
+                                    <h4 class="o-neon">TURNING POINT</h4>
+                                    <p>
+                                        母のハンドメイドブランド運営を通して、
+                                        Web・SNSの重要性を実感。
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="year">2025</div>
+                                    <h4 class="o-neon">RESTART</h4>
+                                    <p>
+                                        出産を機に自分の軸を見つめ直し、
+                                        デザイン×デジタルで価値を届ける道を選択。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#Distillery" class="close"></a>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Cask 2022 / Origin</h3>
+                            <span>〜経験・強み〜</span>
+                            <div class="experience-item">
+                                <h4 class="o-neon">ADAPTABILITY &amp; RESPONSE</h4>
+                                <p>
+                                    出前館コミュニケーションズにて加盟店注文サポートを担当。<br>
+                                    受電率は部署内トップを維持し、半年でSV業務を任されました。
+                                </p>
+                                <p>
+                                    状況を瞬時に把握し、相手が本当に求めていることを考えながら対応する力を培いました。
+                                </p>
+                            </div>
+                            <div class="experience-item">
+                                <h4 class="o-neon">HOSPITALITY &amp; COMMUNICATION</h4>
+                                <p>
+                                    BARでの接客経験を通して、相手の表情や空気感からニーズを汲み取る姿勢を大切にしてきました。
+                                </p>
+                                <p>
+                                    一人ひとりに合わせた対応を心がけています。
+                                </p>
+                            </div>
+                            <div class="experience-item">
+                                <h4 class="o-neon">SELF MANAGEMENT &amp; RESILIENCE</h4>
+                                <p>
+                                    出産・育児を経験する中で、限られた時間の中で成果を出すための時間管理と優先順位判断を徹底。
+                                </p>
+                                <p>
+                                    環境変化の中でも学びと経験を継続しています。
+                                </p>
+                            </div>
+                            <p>これらの経験を活かし、ユーザーの意図を汲み取るデザインを追求しています。</p>
+                        </div>
+                        <a href="#Distillery" class="close"></a>
+                    </div>
+                </div>
+                <div id="modal4" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Special Reservee</h3>
+                            <span>〜こだわり〜</span>
+                            <div class="philosophy-section">
+                                <h4 class="o-neon">MY PHILOSOPHY</h4>
+                                <p class="philosophy-text">
+                                    私は「伝える」よりも<br>
+                                    「伝わる」デザインを大切にしています。<br><br>
+
+
+                                    画面の向こうにいる人が<br>
+                                    迷わず、安心して、心地よく感じられること。<br><br>
+
+                                    派手さよりも、空気感。<br>
+                                    自己満足よりも、体験。<br><br>
+
+                                    接客や育児を通して学んだ<br>
+                                    “相手の立場に立つ”という姿勢を、<br>
+                                    デザインにも活かしています。
+                                </p>
+
+                                <div class="philosophy-image">
+                                    <img src="img/empathy.jpeg" alt="支える手">
+                                </div>
+
+                            </div>
+                        </div>
+                        <a href="#Distillery" class="close"></a>
+                    </div>
+                </div>
+                <div id="modal5" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Master's Select</h3>
+                            <span>〜スキル〜</span>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <h4 class="o-neon">FRONT-END</h4>
+                                    <p>HTML / CSS / Javascript（基本的なUI実装）</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4 class="o-neon">DESIGN</h4>
+                                    <p>Figma / Photoshop / Illustrator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#Distillery" class="close"></a>
+                    </div>
+                </div>
+                <div id="modal6" class="modal">
+                    <div class="modal-wrapper">
+                        <span class="scroll-indicator o-neon">Scroll</span>
+                        <div class="modal-content">
+                            <h3 class="o-neon">Next Vintage</h3>
+                            <span>〜展望〜</span>
+                            <div class="vision-section">
+                                <h4 class="o-neon">VISION</h4>
+                                <p class="vision-text">
+                                    私は、<br>
+                                    想いをかたちにできるデザイナーでありたいと考えています。<br><br>
+
+
+                                    小さなブランドや個人の活動、<br>
+                                    まだ言語化されていない価値を、<br>
+                                    丁寧に汲み取り、届けること。<br><br>
+
+                                    デザインを通して、<br>
+                                    誰かの挑戦を後押しできる存在になることが目標です。<br><br>
+
+                                    接客や育児を通して学んだ<br>
+                                    “相手の立場に立つ”という姿勢を、<br>
+                                    デザインにも活かしています。
+                                </p>
+                                <div class="vision-image">
+                                    <img src="img/sun.jpeg" alt="朝日">
+                                </div>
+                            </div>
+                            <a href="#Distillery" class="close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="Skill" class="fade">
+        <h2 class="p-neon">Skill Cocktail</h2>
+        <span class="p-neon subtitle">できること</span>
+
+
+        <div class="cocktail">
+            <div class="shaker-area">
+                <img src="img/シェイカー.png" class="shaker" id="shaker">
+                <span class="tap-guide">Tap</span>
+            </div>
+
+            <div class="pour-stream"></div>
+
+            <div class="glass">
+                <div class="drink">
+                    <div class="liquid">
+                        <div class="surface"></div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="skill-data">
+
+                        <div class="skill">
+                            <span>HTML / CSS</span>
+                            <div class="bar">
+                                <div class="fill html">
+                                    <span class="percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="bar">
+                                <div class="fill js">
+                                    <span class="percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Figma</span>
+                            <div class="bar">
+                                <div class="fill figma">
+                                    <span class="percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Photoshop</span>
+                            <div class="bar">
+                                <div class="fill photoshop">
+                                    <span class="percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Illustrator</span>
+                            <div class="bar">
+                                <div class="fill illustrator">
+                                    <span class="percent">0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="Tasting" class="fade">
+        <h2 class="p-neon">Tasting</h2>
+        <span class="p-neon subtitle">制作したもの</span>
+
+        <div class="works">
+
+            <a href="business-card.html" class="work">
+                <img src="img/名刺.png">
+                <div class="overlay">
+                    <h3>名刺</h3>
+                    <p>Illustrator / Photoshop</p>
+                </div>
+            </a>
+
+            <a href="banner-hinamaturi.html" class="work">
+                <img src="img/ひな祭り　バナー-復元.png">
+                <div class="overlay">
+                    <h3>バナー(ひな祭り)</h3>
+                    <p>Photoshop</p>
+                </div>
+            </a>
+            <a href="banner-cafe.html" class="work">
+                <img src="img/カフェ　バナー.png">
+                <div class="overlay">
+                    <h3>バナー(カフェ)</h3>
+                    <p>Photoshop</p>
+                </div>
+            </a>
+            <a href="banner-burger.html" class="work">
+                <img src="img/ハンバーガー　バナー.png">
+                <div class="overlay">
+                    <h3>バナー(ハンバーガー)</h3>
+                    <p>Photoshop</p>
+                </div>
+            </a>
+            <a href="lp-cafe.html" class="work">
+                <img src="img/lp-cafe.png">
+                <div class="overlay">
+                    <h3>ホームページ(カフェ)</h3>
+                    <p>HTML / CSS</p>
+                </div>
+            </a>
+            <a href="#" class="work">
+                <img src="img/portfolio.jpeg">
+                <div class="overlay">
+                    <h3>ポートフォリオ</h3>
+                    <p>HTML / CSS / JS</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer id="Contact" class="fade">
+        <div class="footer-content">
+            <h2 class="p-neon">Contact</h2>
+            <span class="p-neon subtitle">ご注文・お問い合わせ</span>
+            
+            <p class="footer-message">
+                新しいプロジェクトの相談から、デザインに関する雑談まで。<br>
+                カウンター越しにお話しするように、お気軽にご連絡ください。
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:bu63863@gmail.com" class="contact-item">
+                    <span class="en o-neon">Email</span>
+                    <span class="ja">メールを送る</span>
+                </a>
+                <a href="https://instagram.com/020_917" target="_blank" class="contact-item">
+                    <span class="en o-neon">Instagram</span>
+                    <span class="ja">DMで送る</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="p-neon">&copy; 2026 Ayumi Tanaka Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
